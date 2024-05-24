@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4e64a0aa-cb12-4586-85ba-e1ac040d787b" name="Changes" comment="add schedule, main page, form schedule" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2gH4Z08qcYR1Dfls280PrKFZ6jE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.eject.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\zizzman\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\training" />
+      <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\assets" />
+      <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src" />
+      <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\vid1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="eject" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/labsitejej/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="eject" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/labsitejej/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.eject" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e64a0aa-cb12-4586-85ba-e1ac040d787b" name="Changes" comment="" />
+      <created>1715341224116</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715341224116</updated>
+      <workItem from="1715341230498" duration="4294000" />
+      <workItem from="1715584171790" duration="15249000" />
+      <workItem from="1715611475362" duration="69000" />
+      <workItem from="1715670484092" duration="11712000" />
+      <workItem from="1715759656997" duration="12891000" />
+      <workItem from="1715843867847" duration="3069000" />
+      <workItem from="1715852592015" duration="1160000" />
+      <workItem from="1715860952923" duration="6971000" />
+      <workItem from="1715929815176" duration="17351000" />
+      <workItem from="1716060091765" duration="1179000" />
+      <workItem from="1716275482442" duration="5118000" />
+      <workItem from="1716285867282" duration="3646000" />
+      <workItem from="1716361769622" duration="4652000" />
+      <workItem from="1716377872071" duration="654000" />
+      <workItem from="1716381878396" duration="1853000" />
+      <workItem from="1716448452076" duration="19044000" />
+      <workItem from="1716534675309" duration="248000" />
+    </task>
+    <task id="LOCAL-00001" summary="add schedule, main page, form schedule">
+      <option name="closed" value="true" />
+      <created>1716470754256</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716470754257</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add schedule, main page, form schedule" />
+    <option name="LAST_COMMIT_MESSAGE" value="add schedule, main page, form schedule" />
+  </component>
+</project>
