@@ -1,11 +1,11 @@
 import React from 'react';
 
-import NavBar from '../components/Navbar.jsx'
-import Footer from '../components/Footer.jsx'
+import NavBar from '../../components/Navbar.jsx'
+import Footer from '../../components/Footer.jsx'
 
-import DDDprinter from '../assets/DDDprinter.svg'
+import DDDprinter from '../../assets/DDDprinter.svg'
 import {Link} from "react-router-dom";
-import Logo_printer from "../assets/DDDprinter.svg";
+import Logo_printer from "../../assets/DDDprinter.svg";
 
 function Home() {
     return (

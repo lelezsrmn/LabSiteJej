@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form"
 
-    function EventForm({dateSelected}) {
+    function EventForm( {dateSelected} ) {
     const { register, handleSubmit } = useForm()
     const onSubmit = (data) => {
         console.log(data)
@@ -29,9 +29,14 @@ import { useForm } from "react-hook-form"
             </div>
 
             <div>
-                <p className={"text-white font-mono antialiased tracking-normal text-base font-black"}>durée utilisation</p>
+                <p className={"text-white font-mono  tracking-normal text-base font-black"}>durée utilisation</p>
                 <input {...register("dureeutilisation",
-                    {required: true})}/>
+                    {required: true,
+                        pattern: /^\d+$/
+                    })}
+                    className={"p-2  overflow-auto resize-none rounded-md"}
+                       placeholder={"déscription impression..."}/>
+
             </div>
 
             <div>

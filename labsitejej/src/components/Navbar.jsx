@@ -50,9 +50,8 @@ function Navbar() {
                                     <button
                                         type="button"
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                        onClick={toggleDropdown}
-                                    >
-                                        Menu
+                                        onClick={toggleDropdown}>
+                                            Menu
                                     </button>
                                     {isOpen && (
                                         <div
@@ -66,11 +65,13 @@ function Navbar() {
                                                 >
                                                     Schedule
                                                 </Link>
-                                                <a href="#"
-                                                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                                                   role="menuitem">
-                                                    Option 2
-                                                </a>
+                                                <Link
+                                                    to="/CallProjet"
+                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                                    role="menuitem"
+                                                >
+                                                    Appel a projet
+                                                </Link>
                                                 <a href="#"
                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                                                    role="menuitem">
