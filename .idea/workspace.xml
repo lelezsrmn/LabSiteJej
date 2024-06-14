@@ -4,37 +4,103 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e64a0aa-cb12-4586-85ba-e1ac040d787b" name="Changes" comment="add schedule, main page, form schedule">
-      <change afterPath="$PROJECT_DIR$/labsitejej/src/pages/CallProjet/CallProjet.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/labsitejej/src/pages/CallProjet/ContentForum.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/labsitejej/src/pages/CallProjet/Data.js" afterDir="false" />
+    <list default="true" id="4e64a0aa-cb12-4586-85ba-e1ac040d787b" name="Changes" comment="add schedule &amp;&amp; form">
+      <change afterPath="$PROJECT_DIR$/labsitejej/backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labsitejej/backend/authMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labsitejej/backend/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labsitejej/backend/models/schema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labsitejej/backend/routes/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AdminDashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AdminPannel.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/LoginPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/PrivateRoute.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/src/components/FormSchedule.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/src/components/FormSchedule.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/src/pages/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/src/pages/Schedule.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/src/pages/Schedule.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/DDDprinter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/FOND_LEONARD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/LOGO-BLEU-SANS-FOND-V2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/Logo-SDV_ISI_Négative-Noir.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/LogoSdvBase.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policeGotham/Gotham-Black.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policeGotham/Gotham-Bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policeGotham/Gotham-Book.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policeGotham/Gotham-Medium.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policeGotham/GothamRnd-Bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policeGotham/GothamRnd-BoldIta.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policeGotham/GothamRnd-Book.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policeGotham/GothamRnd-BookIta.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policeGotham/GothamRnd-Medium.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policePoppins/Poppins-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policePoppins/Poppins-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policePoppins/Poppins-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policePoppins/Poppins-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policePoppins/Poppins-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/assets/policePoppins/Poppins-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/components/Boutons.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/components/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/components/FormLogin.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/components/FormSchedule.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/components/FormSignIn.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/components/Navbar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/pages/CallProjet/CallProjet.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/pages/CallProjet/ContentForum.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/pages/CallProjet/Data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/pages/Home/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/pages/Schedule.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/pages/ScheduleStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/training/Calc/calculatrice.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/training/Props_vid/Student.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/training/button/button.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/training/card_vid/Card.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/training/conditionalRender/UserGreeting.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/training/listVid/list.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/training/useStateVid/MyComponent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/training/vid1/Food.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/training/vid1/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/src/training/vid1/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JSX File" />
         <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$" />
+    </include_path>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -52,6 +118,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zizzman/OneDrive - CFA SUP DE VINCI/Documents/s220si/y2/stage/LabSiteJej/labsitejej/frontend/package.json&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -60,18 +127,18 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.eject.executor&quot;: &quot;Run&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\zizzman\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\frontend" />
+      <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\pages\schedule" />
       <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\pages\Home" />
       <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\pages\CallProjet" />
       <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\training" />
-      <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\assets" />
-      <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -86,15 +153,16 @@
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/labsitejej/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
+      <package-json value="$PROJECT_DIR$/labsitejej/frontend/package.json" />
+      <command value="start" />
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.eject" />
+      <item itemvalue="npm.start" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
@@ -139,6 +207,31 @@
       <workItem from="1716559498726" duration="2474000" />
       <workItem from="1716796198701" duration="3331000" />
       <workItem from="1716967546862" duration="4505000" />
+      <workItem from="1716988740370" duration="621000" />
+      <workItem from="1716992757180" duration="1968000" />
+      <workItem from="1717062632397" duration="780000" />
+      <workItem from="1717069076334" duration="7943000" />
+      <workItem from="1717399429562" duration="796000" />
+      <workItem from="1717406937827" duration="454000" />
+      <workItem from="1717407490973" duration="5345000" />
+      <workItem from="1717423050214" duration="3239000" />
+      <workItem from="1717485287859" duration="655000" />
+      <workItem from="1717501175436" duration="671000" />
+      <workItem from="1717503536295" duration="47000" />
+      <workItem from="1717503601793" duration="2780000" />
+      <workItem from="1717572803614" duration="3000" />
+      <workItem from="1717661114713" duration="6983000" />
+      <workItem from="1717773039192" duration="66000" />
+      <workItem from="1718004893149" duration="2212000" />
+      <workItem from="1718018776741" duration="598000" />
+      <workItem from="1718096454911" duration="1451000" />
+      <workItem from="1718105730565" duration="72000" />
+      <workItem from="1718105838133" duration="768000" />
+      <workItem from="1718127176727" duration="86000" />
+      <workItem from="1718191468268" duration="598000" />
+      <workItem from="1718264149168" duration="13615000" />
+      <workItem from="1718358253510" duration="4865000" />
+      <workItem from="1718368244245" duration="3974000" />
     </task>
     <task id="LOCAL-00001" summary="add schedule, main page, form schedule">
       <option name="closed" value="true" />
@@ -156,14 +249,26 @@
       <option name="project" value="LOCAL" />
       <updated>1716535231123</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add schedule &amp;&amp; form">
+      <option name="closed" value="true" />
+      <created>1716988796684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716988796684</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add schedule, main page, form schedule" />
-    <option name="LAST_COMMIT_MESSAGE" value="add schedule, main page, form schedule" />
+    <MESSAGE value="add schedule &amp;&amp; form" />
+    <option name="LAST_COMMIT_MESSAGE" value="add schedule &amp;&amp; form" />
   </component>
 </project>
