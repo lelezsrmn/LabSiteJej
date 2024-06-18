@@ -1,30 +1,48 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import AddPrinterForm from './AddPrinterForm';
+import AddUserForm from './AddUserForm';
+import UserTable from './UserTable';
+import Navbar from '../../components/Navbar'
 
 const AdminDashboard = () => {
-    const [user, setUser] = useState(null);
+    const [userData, setUserData] = useState(null);
 
     useEffect(() => {
         const fetchUser = async () => {
-            const token = localStorage.getItem('token');
-            if (token) {
+            try {
+                const token = localStorage.getItem('token');
                 const response = await axios.get('http://localhost:4000/user', {
-                    headers: { Authorization: `Bearer ${token}` }
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
                 });
-                setUser(response.data);
+                console.log('Fetched user data:', response.data);
+                setUserData(response.data);
+            } catch (error) {
+                console.error('Error fetching user data:', error);
             }
         };
+
         fetchUser();
     }, []);
 
-    if (!user) return <div>Loading...</div>;
-    if (user.role !== 'admin') return <div>Access Denied</div>;
-
     return (
         <div>
-            <h1>Admin Dashboard</h1>
-            <p>Welcome, {user.username}</p>
-            {/* Vos composants d'administration ici */}
+            <Navbar/>
+            <div className="p-8">
+                <h1 className="text-2xl font-bold mb-4">Tableau de bord admin</h1>
+                <div className="mb-8">
+                    <AddPrinterForm/>
+                </div>
+                <div>
+                    <AddUserForm/>
+                </div>
+                <div>
+                    <UserTable userData={userData}/>
+                </div>
+            </div>
+
         </div>
     );
 };

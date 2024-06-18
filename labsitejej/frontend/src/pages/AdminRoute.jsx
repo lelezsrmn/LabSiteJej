@@ -1,14 +1,15 @@
 import React from 'react';
-import { Route, Navigate } from 'react-router-dom';
-import jwtDecode from 'jwt-decode';
+import { Navigate } from 'react-router-dom';
 
-const AdminRoute = ({ component: Component }) => {
+const AdminRoute = ({ children }) => {
     const token = localStorage.getItem('token');
-    if (!token) {
+    const username = localStorage.getItem('username'); // Stockez le nom d'utilisateur lors de la connexion
+    console.log("AdminRoute - Token:", token);
+    console.log("AdminRoute - Username:", username);
+    if (!token || username !== 'admin') {
         return <Navigate to="/LoginPage" />;
     }
-    const decodedToken = jwtDecode(token);
-    return decodedToken.role === 'admin' ? <Component /> : <Navigate to="/" />;
+    return children;
 };
 
 export default AdminRoute;
