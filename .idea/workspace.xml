@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e64a0aa-cb12-4586-85ba-e1ac040d787b" name="Changes" comment="add login page and admin side">
-      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AddPrinterForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AddUserForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/UserTable.jsx" afterDir="false" />
+    <list default="true" id="4e64a0aa-cb12-4586-85ba-e1ac040d787b" name="Changes" comment="addd schedule, printers, and a lot a loooooooot mon dieux">
+      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/Home/PrinterDetails.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/Home/TextHome.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/backend/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/backend/authMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/backend/authMiddleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/backend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/backend/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/backend/models/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/backend/models/schema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/backend/routes/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/backend/routes/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminRoute.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AddPrinterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AddPrinterForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AddUserForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AddUserForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AdminDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AdminDashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AdminPannel.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/UserTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/UserTable.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/PrivateRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/PrivateRoute.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,31 +54,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/zizzman/OneDrive - CFA SUP DE VINCI/Documents/s220si/y2/stage/LabSiteJej/labsitejej/frontend/package.json",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.eject.executor": "Run",
-    "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "ts.external.directory.path": "C:\\Users\\zizzman\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zizzman/OneDrive - CFA SUP DE VINCI/Documents/s220si/y2/stage/LabSiteJej/labsitejej/frontend/package.json&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.eject.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\zizzman\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\frontend\src" />
       <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\frontend" />
       <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\pages\schedule" />
       <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\pages\Home" />
       <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\pages\CallProjet" />
-      <recent name="C:\Users\zizzman\OneDrive - CFA SUP DE VINCI\Documents\s220si\y2\stage\LabSiteJej\labsitejej\src\training" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -176,7 +173,8 @@
       <workItem from="1718358253510" duration="4865000" />
       <workItem from="1718368244245" duration="5748000" />
       <workItem from="1718566702698" duration="16641000" />
-      <workItem from="1718696283904" duration="15108000" />
+      <workItem from="1718696283904" duration="15363000" />
+      <workItem from="1718780660179" duration="11364000" />
     </task>
     <task id="LOCAL-00001" summary="add schedule, main page, form schedule">
       <option name="closed" value="true" />
@@ -218,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718615265816</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="addd schedule, printers, and a lot a loooooooot mon dieux">
+      <option name="closed" value="true" />
+      <created>1718718550579</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718718550579</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +238,7 @@
     <MESSAGE value="add schedule &amp;&amp; form" />
     <MESSAGE value="big commit" />
     <MESSAGE value="add login page and admin side" />
-    <option name="LAST_COMMIT_MESSAGE" value="add login page and admin side" />
+    <MESSAGE value="addd schedule, printers, and a lot a loooooooot mon dieux" />
+    <option name="LAST_COMMIT_MESSAGE" value="addd schedule, printers, and a lot a loooooooot mon dieux" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Button, TextField, MenuItem, Select, InputLabel, FormControl } from '@mui/material';
 
 const AddUserForm = () => {
     const [username, setUsername] = useState('');
@@ -31,46 +32,38 @@ const AddUserForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-full max-w-sm">
-            <h2 className="text-xl font-bold mb-4">Ajouter un utilisateur</h2>
-            <div className="mb-4">
-                <label className="block text-gray-700">Nom d'utilisateur</label>
-                <input
-                    type="text"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    className="w-full p-2 border border-gray-300 rounded mt-2"
-                    required
-                />
-            </div>
-            <div className="mb-4">
-                <label className="block text-gray-700">Mot de passe</label>
-                <input
-                    type="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    className="w-full p-2 border border-gray-300 rounded mt-2"
-                    required
-                />
-            </div>
-            <div className="mb-4">
-                <label className="block text-gray-700">Rôle</label>
-                <select
+        <form onSubmit={handleSubmit}>
+            <TextField
+                label="Nom d'utilisateur"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                fullWidth
+                margin="normal"
+                required
+            />
+            <TextField
+                label="Mot de passe"
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                fullWidth
+                margin="normal"
+                required
+            />
+            <FormControl fullWidth margin="normal">
+                <InputLabel>Rôle</InputLabel>
+                <Select
                     value={role}
                     onChange={(e) => setRole(e.target.value)}
-                    className="w-full p-2 border border-gray-300 rounded mt-2"
                     required
                 >
-                    <option value="user">Utilisateur</option>
-                    <option value="admin">Administrateur</option>
-                </select>
-            </div>
-            <button
-                type="submit"
-                className="bg-blue-500 text-white p-2 rounded mt-4"
-            >
+                    <MenuItem value="user">Utilisateur</MenuItem>
+                    <MenuItem value="admin">Administrateur</MenuItem>
+                </Select>
+            </FormControl>
+            <Button type="submit" variant="contained" color="primary">
                 Ajouter
-            </button>
+            </Button>
         </form>
     );
 };

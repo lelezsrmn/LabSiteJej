@@ -3,8 +3,9 @@ import axios from 'axios';
 import AddPrinterForm from './AddPrinterForm';
 import AddUserForm from './AddUserForm';
 import UserTable from './UserTable';
-import Navbar from '../../components/Navbar'
-
+import Navbar from '../../components/Navbar';
+import { Container, Grid, Paper, Typography, Box } from '@mui/material';
+    
 const AdminDashboard = () => {
     const [userData, setUserData] = useState(null);
 
@@ -29,20 +30,40 @@ const AdminDashboard = () => {
 
     return (
         <div>
-            <Navbar/>
-            <div className="p-8">
-                <h1 className="text-2xl font-bold mb-4">Tableau de bord admin</h1>
-                <div className="mb-8">
-                    <AddPrinterForm/>
-                </div>
-                <div>
-                    <AddUserForm/>
-                </div>
-                <div>
-                    <UserTable userData={userData}/>
-                </div>
-            </div>
-
+            <Navbar />
+            <Box sx={{ backgroundColor: '#e3f2fd', minHeight: '100vh', paddingTop: 4 }}>
+                <Container>
+                    <Typography variant="h4" component="h1" gutterBottom>
+                        Tableau de bord admin
+                    </Typography>
+                    <Grid container spacing={3}>
+                        <Grid item xs={12} md={6}>
+                            <Paper elevation={3} className="p-4">
+                                <Typography variant="h6" gutterBottom>
+                                    Ajouter une imprimante
+                                </Typography>
+                                <AddPrinterForm />
+                            </Paper>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <Paper elevation={3} className="p-4">
+                                <Typography variant="h6" gutterBottom>
+                                    Ajouter un utilisateur
+                                </Typography>
+                                <AddUserForm />
+                            </Paper>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Paper elevation={3} className="p-4">
+                                <Typography variant="h6" gutterBottom>
+                                    Liste des utilisateurs
+                                </Typography>
+                                <UserTable />
+                            </Paper>
+                        </Grid>
+                    </Grid>
+                </Container>
+            </Box>
         </div>
     );
 };

@@ -15,9 +15,19 @@ const eventSchema = new Schema({
     dateBegin: { type: Date }
 });
 
+const issueSchema = new Schema({
+    description: { type: String, required: true },
+    reportedBy: { type: Schema.Types.ObjectId, ref: 'User', required: true },
+    dateReported: { type: Date, default: Date.now }
+});
+
 const printerSchema = new Schema({
     name: { type: String, required: true },
-    status: { type: String, enum: ['libre', 'en utilisation', 'cassée'], default: 'libre' }
+    status: { type: String, required: true },
+    description: { type: String },
+    dateBegin: { type: Date },
+    dureeUtilisation: { type: Number },
+    issues: [issueSchema]
 });
 
 const User = mongoose.model('User', userSchema);

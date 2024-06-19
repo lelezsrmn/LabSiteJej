@@ -27,6 +27,41 @@ router.get('/printers', async (req, res) => {
     }
 });
 
+router.post('/printers/:id/reportIssue', verifyToken, async (req, res) => {
+    const { issueDescription, dateReported } = req.body;
+    const userId = req.user._id;
+
+    try {
+        const printer = await Printer.findById(req.params.id);
+        if (!printer) {
+            return res.status(404).send('Printer not found');
+        }
+
+        printer.issues.push({
+            description: issueDescription,
+            reportedBy: userId,
+            dateReported: dateReported || new Date(),
+        });
+
+        await printer.save();
+        res.send('Issue reported successfully');
+    } catch (error) {
+        res.status(500).send('Error reporting issue');
+    }
+});
+
+router.get('/printers/:id', async (req, res) => {
+    try {
+        const printer = await Printer.findById(req.params.id);
+        if (!printer) {
+            return res.status(404).send('Printer not found');
+        }
+        res.json(printer);
+    } catch (error) {
+        res.status(500).send('Error fetching printer details');
+    }
+});
+
 // Route pour mettre à jour l'état d'une imprimante
 router.put('/printers/:id', verifyToken, verifyAdmin, async (req, res) => {
     const { status } = req.body;

@@ -25,6 +25,7 @@ const UserTable = () => {
     const columns = [
         { field: 'id', headerName: 'ID', width: 150 },
         { field: 'username', headerName: 'Username', width: 150 },
+        { field: 'email', headerName: 'Email', width: 200 },
         { field: 'role', headerName: 'Role', width: 150 },
     ];
 

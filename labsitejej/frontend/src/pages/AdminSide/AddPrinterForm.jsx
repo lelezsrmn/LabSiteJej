@@ -29,7 +29,6 @@ const AddPrinterForm = () => {
 
     return (
         <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-full max-w-sm">
-            <h2 className="text-xl font-bold mb-4">Ajouter une imprimante</h2>
             <div className="mb-4">
                 <label className="block text-gray-700">Nom de l'imprimante</label>
                 <input

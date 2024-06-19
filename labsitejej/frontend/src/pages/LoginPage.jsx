@@ -16,6 +16,7 @@ const LoginPage = () => {
             console.log("LoginPage - Response:", response.data);
             localStorage.setItem('token', response.data.token);
             localStorage.setItem('username', username);
+            localStorage.setItem('user', JSON.stringify(response.data.user));
 
             // Stocker l'heure d'expiration du token
             const decodedToken = JSON.parse(atob(response.data.token.split('.')[1]));
