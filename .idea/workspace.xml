@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e64a0aa-cb12-4586-85ba-e1ac040d787b" name="Changes" comment="addd schedule, printers, and a lot a loooooooot mon dieux">
-      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/Home/PrinterDetails.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/Home/TextHome.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/theme.js" afterDir="false" />
+    <list default="true" id="4e64a0aa-cb12-4586-85ba-e1ac040d787b" name="Changes" comment="add log out bouton">
+      <change afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/MesImpressions/MesImpressions.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/backend/models/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/backend/models/schema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/backend/routes/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/backend/routes/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminRoute.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AddPrinterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AddPrinterForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AddUserForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AddUserForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AdminDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/AdminDashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/UserTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/AdminSide/UserTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/Home/TextHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/Home/TextHome.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labsitejej/frontend/src/pages/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/labsitejej/frontend/src/pages/LoginPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +41,9 @@
     <include_path>
       <path value="$PROJECT_DIR$" />
     </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -174,7 +177,10 @@
       <workItem from="1718368244245" duration="5748000" />
       <workItem from="1718566702698" duration="16641000" />
       <workItem from="1718696283904" duration="15363000" />
-      <workItem from="1718780660179" duration="11364000" />
+      <workItem from="1718780660179" duration="14415000" />
+      <workItem from="1718817868219" duration="1326000" />
+      <workItem from="1718867928719" duration="4368000" />
+      <workItem from="1718881891053" duration="5355000" />
     </task>
     <task id="LOCAL-00001" summary="add schedule, main page, form schedule">
       <option name="closed" value="true" />
@@ -224,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718718550579</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add log out bouton">
+      <option name="closed" value="true" />
+      <created>1718797605434</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718797605434</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +253,7 @@
     <MESSAGE value="big commit" />
     <MESSAGE value="add login page and admin side" />
     <MESSAGE value="addd schedule, printers, and a lot a loooooooot mon dieux" />
-    <option name="LAST_COMMIT_MESSAGE" value="addd schedule, printers, and a lot a loooooooot mon dieux" />
+    <MESSAGE value="add log out bouton" />
+    <option name="LAST_COMMIT_MESSAGE" value="add log out bouton" />
   </component>
 </project>

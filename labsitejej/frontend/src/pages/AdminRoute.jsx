@@ -7,7 +7,7 @@ const AdminRoute = ({ children }) => {
     console.log("AdminRoute - Token:", token);
     console.log("AdminRoute - Username:", username);
     if (!token || username !== 'admin') {
-        return <Navigate to="/LoginPage" />;
+        return <Navigate to="/Login" />;
     }
     return children;
 };

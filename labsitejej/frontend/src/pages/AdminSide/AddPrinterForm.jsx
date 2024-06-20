@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Button, TextField, MenuItem, Select, InputLabel, FormControl, Box, Typography } from '@mui/material';
 
 const AddPrinterForm = () => {
     const [name, setName] = useState('');
@@ -28,37 +29,34 @@ const AddPrinterForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-full max-w-sm">
-            <div className="mb-4">
-                <label className="block text-gray-700">Nom de l'imprimante</label>
-                <input
-                    type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="w-full p-2 border border-gray-300 rounded mt-2"
-                    required
-                />
-            </div>
-            <div className="mb-4">
-                <label className="block text-gray-700">Statut de l'imprimante</label>
-                <select
+        <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
+            <Typography variant="h6" gutterBottom>
+                Ajouter une nouvelle imprimante
+            </Typography>
+            <TextField
+                label="Nom de l'imprimante"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                fullWidth
+                margin="normal"
+                required
+            />
+            <FormControl fullWidth margin="normal">
+                <InputLabel>Statut de l'imprimante</InputLabel>
+                <Select
                     value={status}
                     onChange={(e) => setStatus(e.target.value)}
-                    className="w-full p-2 border border-gray-300 rounded mt-2"
                     required
                 >
-                    <option value="libre">Libre</option>
-                    <option value="en utilisation">En utilisation</option>
-                    <option value="cassée">Cassée</option>
-                </select>
-            </div>
-            <button
-                type="submit"
-                className="bg-blue-500 text-white p-2 rounded mt-4"
-            >
+                    <MenuItem value="libre">Libre</MenuItem>
+                    <MenuItem value="en utilisation">En utilisation</MenuItem>
+                    <MenuItem value="cassée">Cassée</MenuItem>
+                </Select>
+            </FormControl>
+            <Button type="submit" variant="contained" color="primary">
                 Ajouter
-            </button>
-        </form>
+            </Button>
+        </Box>
     );
 };
 

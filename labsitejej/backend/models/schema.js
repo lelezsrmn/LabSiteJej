@@ -1,6 +1,17 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+const impressionSchema = new Schema({
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+    nameImpression: { type: String, required: true },
+    description: { type: String, required: true },
+    dureeUtilisation: { type: String, required: true },
+    dateBegin: { type: Date, required: true },
+    choiceMachine: { type: String, required: true },
+});
+
+
+
 const userSchema = new Schema({
     username: { type: String, required: true, unique: true },
     password: { type: String, required: true },
@@ -30,8 +41,18 @@ const printerSchema = new Schema({
     issues: [issueSchema]
 });
 
+const projectSchema = new Schema({
+    name: { type: String, required: true },
+    description: { type: String, required: true },
+    languages: { type: [String], required: true },
+    author: { type: String, required: true },
+    createdAt: { type: Date, default: Date.now }
+});
+
 const User = mongoose.model('User', userSchema);
 const EventCalendar = mongoose.model('EventCalendar', eventSchema);
 const Printer = mongoose.model('Printer', printerSchema);
+const Project = mongoose.model('Project', projectSchema);
+const Impression = mongoose.model('Impression', impressionSchema);
 
-module.exports = { User, EventCalendar, Printer };
+module.exports = { User, EventCalendar, Printer, Project, Impression };

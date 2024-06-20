@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import axios from 'axios';
+import { Box, Typography } from '@mui/material';
 
 const UserTable = () => {
     const [users, setUsers] = useState([]);
@@ -30,7 +31,10 @@ const UserTable = () => {
     ];
 
     return (
-        <div style={{ height: 400, width: '100%' }}>
+        <Box sx={{ height: 400, width: '100%' }}>
+            <Typography variant="h6" gutterBottom>
+                Liste des utilisateurs
+            </Typography>
             <DataGrid
                 rows={users.map(user => ({ id: user._id, ...user }))}
                 columns={columns}
@@ -38,7 +42,7 @@ const UserTable = () => {
                 rowsPerPageOptions={[5]}
                 checkboxSelection
             />
-        </div>
+        </Box>
     );
 };
 

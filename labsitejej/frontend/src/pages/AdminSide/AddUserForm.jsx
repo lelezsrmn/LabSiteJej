@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Button, TextField, MenuItem, Select, InputLabel, FormControl } from '@mui/material';
+import { Button, TextField, MenuItem, Select, InputLabel, FormControl, Box, Typography } from '@mui/material';
 
 const AddUserForm = () => {
     const [username, setUsername] = useState('');
@@ -32,7 +32,10 @@ const AddUserForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
+            <Typography variant="h6" gutterBottom>
+                Ajouter un nouvel utilisateur
+            </Typography>
             <TextField
                 label="Nom d'utilisateur"
                 value={username}
@@ -64,7 +67,7 @@ const AddUserForm = () => {
             <Button type="submit" variant="contained" color="primary">
                 Ajouter
             </Button>
-        </form>
+        </Box>
     );
 };
 

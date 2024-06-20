@@ -3,8 +3,47 @@ const router = express.Router();
 const { verifyToken, verifyAdmin } = require('../authMiddleware');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const { User, EventCalendar, Printer } = require('../models/schema');
+const { User, EventCalendar, Printer, Project, Impression} = require('../models/schema');
 const mongoose = require('mongoose');
+
+router.get('/user/impressions', verifyToken, async (req, res) => {
+    try {
+        const userId = req.user._id;
+        const impressions = await Impression.find({ userId });
+        res.json(impressions);
+    } catch (error) {
+        res.status(500).send('Error fetching impressions');
+    }
+});
+
+router.post('/projects', verifyToken, async (req, res) => {
+    const { name, description, languages } = req.body;
+    const author = req.user.username; // Nom de l'utilisateur connecté
+
+    const newProject = new Project({
+        name,
+        description,
+        languages,
+        author,
+    });
+
+    try {
+        const savedProject = await newProject.save();
+        res.status(201).json(savedProject);
+    } catch (error) {
+        res.status(400).json({ error: 'Erreur lors de l\'ajout du projet' });
+    }
+});
+
+// Route pour récupérer tous les projets
+router.get('/projects', async (req, res) => {
+    try {
+        const projects = await Project.find();
+        res.status(200).json(projects);
+    } catch (error) {
+        res.status(400).json({ error: 'Erreur lors de la récupération des projets' });
+    }
+});
 
 router.post('/printers', verifyToken, verifyAdmin, async (req, res) => {
     const { name, status } = req.body;
